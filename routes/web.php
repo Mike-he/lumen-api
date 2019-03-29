@@ -12,4 +12,4 @@
 */
 
 $router->post('/', 'ApiController@postLoginAction');
-$router->get('/orders', 'ApiController@getOrdersAction');
+$router->post('/orders', 'ApiController@getOrdersAction');

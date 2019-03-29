@@ -9,7 +9,6 @@ class ApiController extends Controller
 {
     public function postLoginAction(Request $request)
     {
-
         $username = $request->get('username');
         $password = $request->get('password');
 
@@ -55,7 +54,7 @@ class ApiController extends Controller
 
         if (empty($jsessionId)) {
             return new Response([
-                'code' => 0,
+                'code' => 1,
                 'msg' => '无效JSESSIONID！'
             ]);
         }
